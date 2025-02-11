@@ -3,7 +3,7 @@
 
 Jupyter notebook to **extract audio** from  video files and **transcribe it to text** using FFmpeg and OpenAI's Whisper.
 
-## Prerequisites 📋
+## Prerequisites
 - Python 3.8+
 - FFmpeg (installed and added to `PATH`)
 
@@ -13,7 +13,7 @@ git clone https://github.com/ubadaht/video2audio2text/.git
 cd video2audio2text
 ```
 
-## Usage 🚀
+## Usage
 
 ### Step 1: Extract Audio from Video
 ```python
@@ -35,7 +35,7 @@ with open("transcription.txt", "w") as f:
     f.write(result["text"])
 ```
 
-## Example Workflow 📂
+## Example Workflow
 ```
 Input: video.mkv
        ↓ (FFmpeg extracts audio)
@@ -57,12 +57,3 @@ Final Output: transcription.txt
 - [OpenAI Whisper](https://github.com/openai/whisper)
 - [FFmpeg](https://ffmpeg.org/)
 ```
-
----
-
-### Key Highlights:
-1. **Audience-Friendly**: Clear steps for both technical and non-technical users.
-2. **Modular**: Easily adaptable to scripts or pipelines.
-3. **Platform-Agnostic**: Works on Windows/Linux/macOS.
-
-Customize the repo links, license, or add screenshots as needed! 📁
