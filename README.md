@@ -1,39 +1,43 @@
-```markdown
-# Video to Audio and Transcription Tool
+# Video to Audio & Transcription Tool
 
-Jupyter notebook to **extract audio** from  video files and **transcribe it to text** using FFmpeg and OpenAI's Whisper.
+Extract audio from video and transcribe it using FFmpeg and OpenAI's Whisper.
 
-## Prerequisites
-- Python 3.8+
-- FFmpeg (installed and added to `PATH`)
+## Requirements
+- FFmpeg (installed & in `PATH`)
 
-### Clone the Repository
+## Installation
 ```bash
-git clone https://github.com/ubadaht/video2audio2text/.git
+git clone https://github.com/ubadaht/video2audio2text.git
+cd video2audio2text
+Here's a simpler version of your markdown:
+
+```markdown
+# Video to Audio & Transcription Tool
+
+Extract audio from video and transcribe it using FFmpeg and OpenAI's Whisper.
+
+## Requirements
+- Python 3.8+
+- FFmpeg (installed & in `PATH`)
+
+## Installation
+```bash
+git clone https://github.com/ubadaht/video2audio2text.git
 cd video2audio2text
 ```
 
-```
+## Workflow
+1. **Extract audio**: `video.mkv` → `audio.aac`
+2. **Transcribe**: `audio.aac` → `transcription.txt`
 
-## Example Workflow
-```
-Input: video.mkv
-       ↓ (FFmpeg extracts audio)
-Output: audio.aac
-       ↓ (Whisper transcribes)
-Final Output: transcription.txt
-```
+## Settings
+- **Models**: `tiny`, `base`, `small`, `medium`, `large`
+- **Formats**: Supports `.aac`, `.wav`, `.mp3`, etc.
 
-## Configuration ⚙️
-- **Whisper Models**: Choose from `tiny`, `base`, `small`, `medium`, or `large` (trade-off between speed and accuracy).
-- **Audio Formats**: Supports `.aac`, `.wav`, `.mp3`, etc. (use `-acodec copy` in FFmpeg to preserve original quality).
+## Troubleshooting
+- **FFmpeg Not Found**: Ensure it's installed & in `PATH`.
 
-## Troubleshooting 🔧
-- **FFmpeg Not Found**: Ensure it’s installed and added to your system `PATH`.
-
----
-
-**Acknowledgments**:
+### Credits
 - [OpenAI Whisper](https://github.com/openai/whisper)
 - [FFmpeg](https://ffmpeg.org/)
 ```
