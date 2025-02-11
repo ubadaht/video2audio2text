@@ -13,26 +13,6 @@ git clone https://github.com/ubadaht/video2audio2text/.git
 cd video2audio2text
 ```
 
-## Usage
-
-### Step 1: Extract Audio from Video
-```python
-# In a Jupyter Notebook cell or Python script
-input_mkv = "video.mkv"
-output_audio = "audio.aac"
-
-!ffmpeg -i "{input_mkv}" -vn -acodec copy "{output_audio}"
-```
-
-### Step 2: Transcribe Audio with Whisper
-```python
-import whisper
-
-model = whisper.load_model("base")  # Use "medium" or "large" for better accuracy
-result = model.transcribe("audio.aac")
-
-with open("transcription.txt", "w") as f:
-    f.write(result["text"])
 ```
 
 ## Example Workflow
